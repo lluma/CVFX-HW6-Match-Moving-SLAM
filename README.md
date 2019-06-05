@@ -1,19 +1,24 @@
-# CVFX HW6 Match-Moving-SLAM Report - Team 16
+# CVFX HW6 Report - Team 16
 
 ### 1. Take videos by ourselves
+以下為我們所拍攝的測試影片:
+
 [![Orignal video](http://img.youtube.com/vi/3TmlKczMQds/0.jpg)](https://youtu.be/3TmlKczMQds)
 
 ### 2. Make these visual effects with ORB-SLAM2
-[![Orignal video](http://img.youtube.com/vi/C8XTWXcMIWc/0.jpg)](https://youtu.be/C8XTWXcMIWc)
 我們使用的方法非常單純，首先我們直接將影片根據frame rate進行切割，切割成許多圖片，並且生成每個frame所對應的time stamp，然後輸出成一個文字檔讓ORB-SLAM2可以進行讀取。
 
 接著將上述所提到的圖片與文字檔傳入ORB-SLAM2進行運算，我們使用的模式是Monocular，所以他只能將KeyFrame相機的旋轉與位置進行輸出。
 
 最後我們將圖片檔與剛剛輸出KeyFrame相機的旋轉與位置丟到unity之中去模擬3D，我們使用的方法是將KeyFrame的資訊通通餵給unity中的camera，讓camera可以跟著ORB-SLAM2輸出的軌跡移動，然後再camera前面簡單加上一個3D object，這樣就可以很簡單達到一個類似AR的效果。
 
+以下為結果影片:
+[![Orignal video](http://img.youtube.com/vi/C8XTWXcMIWc/0.jpg)](https://youtu.be/C8XTWXcMIWc)
 ### 3. Make these visual effects with any post-production software
 
-我們這次選擇了用After Effect這套軟體來進行後製，利用不同的影片及拍攝手法去凸顯兩者能做到事情的不同
+為了讓影片能配合我們所要的特效，因此我們重新拍攝了一段短片來製作我們的最終結果影片。
+
+在這次選擇了用After Effect這套軟體來進行後製，利用不同的影片及拍攝手法去凸顯兩者能做到事情的不同
 
 原始影片如下：
 
